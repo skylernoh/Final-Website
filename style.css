@@ -1,0 +1,23 @@
+
+.video-background {
+    position: fixed; /* Fix the video in place */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Use viewport width */
+    height: 100vh; /* Use viewport height */
+    overflow: hidden;
+    z-index: -1; /* Send the video behind other content */
+}
+
+.video-background video {
+    position: absolute; /* Position video absolutely within the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    min-width: 100%; /* Ensure video covers the width */
+    min-height: 100%; /* Ensure video covers the height */
+    width: auto; /* Allow width to adjust */
+    height: auto; /* Allow height to adjust */
+    transform: translate(-50%, -50%); /* Center the video */
+    opacity: 0.5; /* Adjust opacity */
+}
+
