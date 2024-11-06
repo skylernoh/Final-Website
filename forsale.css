@@ -1,0 +1,40 @@
+img {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+
+  /* Sold-out overlay */
+.sold-out-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+ 
+.sold-out-image {
+  width: 300px;
+  height: auto;
+  opacity: 0.9; /* Slight transparency */
+}
+ 
+/* Gray out the background */
+.gray-out {
+  position: relative;
+  z-index: 1;
+  opacity: 0.4; /* Make it gray */
+  pointer-events: none; /* Disable interactions with the content */
+}
+ 
+/* Navbar stays on top */
+.navbar {
+  position: relative;
+  z-index: 1000; /* Higher than gray-out and sold-out overlay */
+}
+ 
+/* Allow clicks on the navbar */
+.navbar-collapse, .navbar-nav, .nav-link {
+  pointer-events: auto; /* Ensure the navbar remains clickable */
+}
